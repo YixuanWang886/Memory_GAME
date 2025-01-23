@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+}
+
+.start-button,
+.reset-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover,
+.reset-button:hover {
+  background-color: #45a049;
+}
+
+.reset-button {
+  background-color: #008CBA;
+}
+
+.reset-button:hover {
+  background-color: #0077a3;
+}
+
+.problem-container {
+  margin: 20px 0;
+}
+
+.current-problem {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.previous-problem {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.result {
+  font-size: 1.2em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.score, .wrong-answers {
+  margin: 5px 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.problem-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.current-problem {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #4fa8c7;
+  border-radius: 5px;
+}
+
+.previous-problem {
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #3d869f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question, .answer {
+  visibility: hidden;
+}
+
+.previous-problem:hover .question,
+.previous-problem:hover .answer {
+  visibility: visible;
+}
+
+.previous-problem:hover .answer {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #61dafb;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4fa8c7;
+}
+
+.result {
+  min-height: 2rem;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+
+.score, .wrong-answers {
+  position: absolute;
+  top: 20px;
+  font-size: 1.2rem;
+  color: #61dafb;
+}
+
+.score {
+  right: 20px;
+}
+
+.wrong-answers {
+  left: 20px;
+}
+
+.game-over {
+  font-size: 2rem;
+  margin: 20px;
+  padding: 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  border-radius: 10px;
+}
